@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title> 
+        Survey Form 
+    </title>
+
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+
+    <div class="heading">
+        Survey Form
+    </div> <br>
+
+    <div class="form-details">
+        <form class="input-fields">
+            <label for="nameInput" class=""> Name <br>
+                <input type="text" class="input" id="name">
+            </label> <br>
+            <label for="dobInput" class=""> Date of Birth <br>
+                <input type="date" class="input" id="dob">
+            </label> <br>
+            <label for="emailInput" class=""> Email Id <br>
+                <input type="email" class="input" id="email">
+            </label> <br>
+            <div>
+                <p>Which among the following is your favourite Web Development Language ?</p>
+                <input type="radio" name="radio" value="HTML" checked>
+                <label>HTML</label><br>
+                <input type="radio" name="radio" value="CSS">
+                <label>CSS</label><br>
+                <input type="radio" name="radio" value="JavaScript">
+                <label>JavaScript</label><br>
+            </div><br>
+            <div>
+                <label for="role">What is your current designation ?</label>
+                <select id="dropdown">
+                <option value="select">Select</option>
+                <option value="student">Student</option>
+                <option value="job">Full-Time Job</option>
+                <option value="other">Other</option>
+                </select>
+            </div><br>
+            <div>
+                <p>Which of the following domains interst you ?</p>
+                <input type="checkbox" id="aiml" name="aiml" value="AI/ML"/>    
+                <label>AI/ML</label> <br>    
+                <input type="checkbox" id="webd" name="webd" value="Web Development"/>    
+                <label>Web Development</label> <br>    
+                <input type="checkbox" id="cad" name="cad" value="Computer Aided Design"/>    
+                <label>Computer Aided Design</label> <br>  
+                <input type="checkbox" id="mgmt" name="mgmt" value="Management"/>    
+                <label>Management</label>  
+            </div><br>
+            <label for="q1" class=""> Brief about your current technical knowledge. <br>
+                <textarea name="ans1" id="curKnowledge" cols="35" rows="5" class="input">
+                </textarea>
+            </label> <br>
+            <label for="q2" class=""> What do you aim to achieve ? <br>
+                <textarea name="ans2" id="aim" cols="35" rows="5" class="input">
+                </textarea>
+            </label> <br>
+            <label for="q3" class=""> Describe your dream project. <br>
+                <textarea name="ans3" id="dreamProject" cols="35" rows="5" class="input">
+                </textarea>
+            </label> <br>
+            <button type="submit" class="button">
+                SUBMIT
+            </button>
+        </form>
+    </div>
+
+    <script src="app.js"> </script>
+
+</body>
+
+</html>
